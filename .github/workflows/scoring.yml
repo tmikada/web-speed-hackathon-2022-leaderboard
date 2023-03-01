@@ -40,15 +40,15 @@ jobs:
         with:
           result-encoding: string
           script: |
-            # const payload = require('/tmp/payload.json');
+            const payload = require('/tmp/payload.json');
 
-            # const startAt = new Date('2022-11-01T00:00:00.000+09:00');
-            # const endAt = new Date('2022-11-28T00:00:00.000+09:00');
-            # const requestedAt = new Date(payload.request_time);
+            const startAt = new Date('2023-02-01T00:00:00.000+09:00');
+            const endAt = new Date('2023-03-31T00:00:00.000+09:00');
+            const requestedAt = new Date(payload.request_time);
 
-            # if (requestedAt < startAt || endAt < requestedAt) {
-            #   return 'closed';
-            # }
+            if (requestedAt < startAt || endAt < requestedAt) {
+              return 'closed';
+            }
             return 'opened';
   vrt:
     runs-on: ubuntu-20.04
