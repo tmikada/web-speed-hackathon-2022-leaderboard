@@ -8,7 +8,6 @@ on:
 env:
   TZ: "Asia/Tokyo"
   WSH_SCORING_DEBUG: "${{ secrets.WSH_SCORING_DEBUG }}"
-  # WSH_SCORING_TARGET_PATHS: "${{ secrets.WSH_SCORING_TARGET_PATHS }}"
   WSH_SCORING_TARGET_PATHS: "${{ ["/2023-03-02","/races/69038403-5e53-4791-8dba-1fc412180c54/race-card","/races/300d18a3-b115-452f-891e-61eba54f229e/odds","/races/69a98b63-84c4-422c-8a65-fe1f66baf656/odds","/races/d0482b1b-cb79-48dc-903c-5d9edbf7c49b/result"] }}"
 jobs:
   payload:
